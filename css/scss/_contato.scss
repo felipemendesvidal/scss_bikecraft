@@ -52,11 +52,11 @@
 }
 
 .contato_dados h3{
-	font-size: 18px;
-	line-height: 25px;
 	text-transform: uppercase;
 	color: $cor-primaria;
 	font-weight: bold;
+	@include tipo-1(18);
+	
 }
 
 .contato_dados span {
