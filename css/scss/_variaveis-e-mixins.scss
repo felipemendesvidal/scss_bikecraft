@@ -21,6 +21,7 @@ $cor-neutra-branca:#fff;
 }
 
 @mixin tipo-2($tamanho){
+    font-family: Georgia, 'Times New Roman', Times, serif ;
     @if $tamanho == 14{
         font-size: 14px;
         line-height: 20px;;
