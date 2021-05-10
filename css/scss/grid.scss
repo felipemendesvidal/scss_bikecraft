@@ -3,9 +3,23 @@
   -moz-box-sizing: border-box; 
   box-sizing: border-box;
 }
+$container:960;
+$gutter:20;
+$colunas:16;
+
+// grid
+@for $i from 1 through $colunas{
+	$width:  $container / $colunas * $i - $gutter;
+	.grid-#{$i}{
+		width: $width + px;
+	}
+}
+
+// extend pra colocar um seletor dentro do outro
+
 
 .container {
-	width: 960px;
+	width: $container + px;
 	margin: 0 auto;
 	padding: 0px;
 	position: relative;
@@ -15,6 +29,7 @@
 	content: " ";
 	display: table;
 }
+
 
 .container:after {
 	clear: both;
