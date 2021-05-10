@@ -7,15 +7,22 @@ $container:960;
 $gutter:20;
 $colunas:16;
 
+// extend pra colocar um seletor dentro do outro
+%grid{
+	float: left;
+	margin-left: ($gutter / 2) + px ;
+	margin-right: ($gutter / 2) + px;
+
+}
 // grid
 @for $i from 1 through $colunas{
 	$width:  $container / $colunas * $i - $gutter;
 	.grid-#{$i}{
+		@extend %grid;
 		width: $width + px;
 	}
 }
 
-// extend pra colocar um seletor dentro do outro
 
 
 .container {
