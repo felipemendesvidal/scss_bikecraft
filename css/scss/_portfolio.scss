@@ -14,11 +14,10 @@
 	font-style: italic;
 	margin-bottom: 20px;
 	@include tipo-2(18);
-
 }
 
 .quote_clientes cite {
-	font-size: 18px;
+	@include tipo-1(18);
 	font-weight: bold;
 	float: right;
 	font-style: normal;
@@ -79,6 +78,6 @@
 }
 
 .rslides_tabs li a:hover, .rslides_tabs li.rslides_here a {
-	background: $cor-primaria;
-	color: $cor-primaria;
+	background: $amarelo;
+	color: $amarelo;
 }

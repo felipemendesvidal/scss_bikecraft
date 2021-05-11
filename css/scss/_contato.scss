@@ -11,6 +11,10 @@
 
 .contato_form {
 	padding-right: 60px;
+	@include d(m) {
+		padding-right: 0px;
+		margin-bottom: 40px;
+	}
 }
 
 .contato_form label{
@@ -22,7 +26,7 @@
 .contato_form input {
 	display: block;
 	width: 100%;
-	border: 4px solid $cor-primaria;
+	border: 4px solid $amarelo;
 	background: none;
 	padding: 7px 10px;
 	margin-bottom: 10px;
@@ -34,7 +38,7 @@
 	display: block;
 	width: 100%;
 	height: 120px;
-	border: 4px solid $cor-primaria;
+	border: 4px solid $amarelo;
 	background: none;
 	padding: 7px 10px;
 	margin-bottom: 20px;
@@ -48,15 +52,14 @@
 }
 
 .orcamento_dados {
-	color: $cor-neutra-branca;
+	color: $white;
 }
 
 .contato_dados h3{
-	text-transform: uppercase;
-	color: $cor-primaria;
-	font-weight: bold;
 	@include tipo-1(18);
-	
+	text-transform: uppercase;
+	color: $amarelo;
+	font-weight: bold;
 }
 
 .contato_dados span {
@@ -79,13 +82,13 @@
 }
 
 .contato_dados ul li a {
-	border: 3px solid $cor-primaria;
+	border: 3px solid $amarelo;
 	display: block;
 	padding: 10px;
 }
 
 .contato_dados ul li a:hover {
-	border-color: $cor-neutra-preto;
+	border-color: $black;
 }
 
 .contato_mapa {
